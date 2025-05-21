@@ -1,0 +1,12 @@
+﻿[
+  {
+    "Name": "Хлеб",
+    "Price": 50,
+    "Type": "Simple"
+  },
+  {
+    "Name": "Яблоки",
+    "Price": 100,
+    "Type": "Weighted"
+  }
+]
