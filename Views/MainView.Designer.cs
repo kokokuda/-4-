@@ -33,6 +33,7 @@
             this.btnAddToCart = new System.Windows.Forms.Button();
             this.btnRemoveFromCart = new System.Windows.Forms.Button();
             this.btnClearCart = new System.Windows.Forms.Button();
+            this.lblTotal = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCart)).BeginInit();
             this.SuspendLayout();
@@ -48,7 +49,7 @@
             this.dataGridViewProducts.RowHeadersWidth = 51;
             this.dataGridViewProducts.RowTemplate.Height = 24;
             this.dataGridViewProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewProducts.Size = new System.Drawing.Size(310, 351);
+            this.dataGridViewProducts.Size = new System.Drawing.Size(310, 359);
             this.dataGridViewProducts.TabIndex = 0;
             // 
             // dataGridViewCart
@@ -56,13 +57,13 @@
             this.dataGridViewCart.AllowUserToAddRows = false;
             this.dataGridViewCart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCart.Location = new System.Drawing.Point(567, 42);
+            this.dataGridViewCart.Location = new System.Drawing.Point(512, 42);
             this.dataGridViewCart.Name = "dataGridViewCart";
             this.dataGridViewCart.ReadOnly = true;
             this.dataGridViewCart.RowHeadersWidth = 51;
             this.dataGridViewCart.RowTemplate.Height = 24;
             this.dataGridViewCart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCart.Size = new System.Drawing.Size(310, 351);
+            this.dataGridViewCart.Size = new System.Drawing.Size(365, 359);
             this.dataGridViewCart.TabIndex = 1;
             // 
             // btnAddToCart
@@ -92,11 +93,21 @@
             this.btnClearCart.Text = "Очистить корзину";
             this.btnClearCart.UseVisualStyleBackColor = true;
             // 
+            // lblTotal
+            // 
+            this.lblTotal.AutoSize = true;
+            this.lblTotal.Location = new System.Drawing.Point(930, 329);
+            this.lblTotal.Name = "lblTotal";
+            this.lblTotal.Size = new System.Drawing.Size(44, 16);
+            this.lblTotal.TabIndex = 5;
+            this.lblTotal.Text = "label1";
+            // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1025, 568);
+            this.Controls.Add(this.lblTotal);
             this.Controls.Add(this.btnClearCart);
             this.Controls.Add(this.btnRemoveFromCart);
             this.Controls.Add(this.btnAddToCart);
@@ -107,6 +118,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewProducts)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridViewCart)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
@@ -117,6 +129,7 @@
         private System.Windows.Forms.Button btnAddToCart;
         private System.Windows.Forms.Button btnRemoveFromCart;
         private System.Windows.Forms.Button btnClearCart;
+        private System.Windows.Forms.Label lblTotal;
     }
 }
 

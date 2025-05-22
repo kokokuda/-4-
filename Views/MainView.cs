@@ -14,18 +14,37 @@ using MyShop.Presenters;
 
 namespace MyShop
 {
-    public partial class MainView : Form, IMainView
+    public partial class MainView : Form, IMainView, ICartView
     {
         private MainPresenter presenter;
+
+        // События из ICartView
+        public event Action<Product, decimal> AddProductRequested;
+        public event Action<CartItem> RemoveProductRequested;
+        public event Action ClearCartRequested;
+
+        private CartPresenter cartPresenter;
+        private Cart cart;
+
+        // Храним текущие элементы корзины, чтобы по индексу получать CartItem
+        private IReadOnlyList<CartItem> cartItems;
 
         public MainView()
         {
             InitializeComponent();
 
+            cart = new Cart();
+            cartPresenter = new CartPresenter(this, cart);
+
             // Создаем презентер и передаем ему эту форму
             presenter = new MainPresenter(this);
 
             this.Load += MainView_Load;
+
+            // Подпишемся на клики кнопок корзины:
+            btnAddToCart.Click += BtnAddToCart_Click;
+            btnRemoveFromCart.Click += BtnRemoveFromCart_Click;
+            btnClearCart.Click += BtnClearCart_Click;
         }
 
         private void MainView_Load(object sender, System.EventArgs e)
@@ -53,6 +72,97 @@ namespace MyShop
             });
 
             dataGridViewProducts.DataSource = products;
+        }
+
+        // Реализация методов ICartView
+
+        public void DisplayCartItems(IReadOnlyList<CartItem> items)
+        {
+            // Сохраняем текущие элементы, чтобы по индексу получать CartItem
+            cartItems = items;
+
+            dataGridViewCart.AutoGenerateColumns = false;
+            dataGridViewCart.Columns.Clear();
+
+            dataGridViewCart.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "ProductName",
+                HeaderText = "Товар"
+            });
+
+            dataGridViewCart.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "Weight",
+                HeaderText = "Вес"
+            });
+
+            dataGridViewCart.Columns.Add(new DataGridViewTextBoxColumn
+            {
+                DataPropertyName = "TotalPrice",
+                HeaderText = "Цена"
+            });
+
+            dataGridViewCart.DataSource = null;
+            dataGridViewCart.DataSource = items.Select(i => new
+            {
+                ProductName = i.Product.Name,
+                Weight = i.Weight,
+                TotalPrice = i.TotalPrice
+            }).ToList();
+        }
+
+        public void DisplayTotal(decimal totalPrice)
+        {
+            lblTotal.Text = $"Итого: {totalPrice} ₽";
+        }
+
+        // Обработчики кнопок корзины:
+
+        private void BtnAddToCart_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewProducts.CurrentRow == null)
+                return;
+
+            var product = (Product)dataGridViewProducts.CurrentRow.DataBoundItem;
+
+            if (product == null)
+                return;
+
+            decimal weight = 1;
+
+            if (product is WeightedProduct)
+            {
+                // Открываем форму для ввода веса, но пока не читаем вес — просто показываем её для будущей логики
+                using (var weightForm = new WeightInputForm())
+                {
+                    weightForm.ShowDialog();
+                    // Пока просто берем вес = 1, позже здесь можно будет заменить логику
+                }
+            }
+
+            AddProductRequested?.Invoke(product, weight);
+        }
+
+        private void BtnRemoveFromCart_Click(object sender, EventArgs e)
+        {
+            if (dataGridViewCart.CurrentRow == null)
+                return;
+
+            // Для удаления нам нужен объект CartItem, который не хранится напрямую в dataGridView.
+            // Поэтому мы сохраняем текущий список элементов корзины в поле cartItems.
+            // По индексу выбранной строки получаем нужный CartItem из cartItems и вызываем событие удаления.
+
+            var index = dataGridViewCart.CurrentRow.Index;
+            if (cartItems != null && index >= 0 && index < cartItems.Count)
+            {
+                var item = cartItems[index];
+                RemoveProductRequested?.Invoke(item);
+            }
+        }
+
+        private void BtnClearCart_Click(object sender, EventArgs e)
+        {
+            ClearCartRequested?.Invoke();
         }
     }
 }
