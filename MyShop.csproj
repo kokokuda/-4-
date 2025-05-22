@@ -83,6 +83,9 @@
     <EmbeddedResource Include="Views\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Views\WeightInputForm.resx">
+      <DependentUpon>WeightInputForm.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="products.json">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>

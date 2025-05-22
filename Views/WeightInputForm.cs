@@ -12,9 +12,18 @@ namespace MyShop.Views
 {
     public partial class WeightInputForm : Form
     {
+
+        public decimal Weight { get; private set; }
         public WeightInputForm()
         {
             InitializeComponent();
+        }
+
+        private void btnWeigh_Click(object sender, EventArgs e)
+        {
+            Weight = numericUpDownWeight.Value;
+            DialogResult = DialogResult.OK;
+            Close();
         }
     }
 }

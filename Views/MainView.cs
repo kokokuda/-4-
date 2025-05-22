@@ -132,11 +132,17 @@ namespace MyShop
 
             if (product is WeightedProduct)
             {
-                // Открываем форму для ввода веса, но пока не читаем вес — просто показываем её для будущей логики
+                
                 using (var weightForm = new WeightInputForm())
                 {
-                    weightForm.ShowDialog();
-                    // Пока просто берем вес = 1, позже здесь можно будет заменить логику
+                    if (weightForm.ShowDialog() == DialogResult.OK)
+                    {
+                        weight = weightForm.Weight;
+                    }
+                    else
+                    {
+                        return;
+                    }
                 }
             }
 
