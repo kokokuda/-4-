@@ -1,0 +1,31 @@
+﻿# Игнорировать папки и файлы Visual Studio
+.vs/
+bin/
+obj/
+
+# Конфигурационные файлы пользователя VS
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+
+# Файлы, создаваемые системой
+*.log
+*.tlog
+*.lastbuildstate
+
+# Папки и файлы NuGet
+packages/
+*.nupkg
+*.snupkg
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+# Файлы тестов и отчетов
+TestResults/
+*.trx
+
+# Другие временные файлы
+*.dbmdl
+*.pdb

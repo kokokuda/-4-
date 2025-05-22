@@ -8,5 +8,50 @@
     "Name": "Яблоки",
     "Price": 100,
     "Type": "Weighted"
+  },
+  {
+    "Name": "Молоко",
+    "Price": 70,
+    "Type": "Simple"
+  },
+  {
+    "Name": "Груши",
+    "Price": 120,
+    "Type": "Weighted"
+  },
+  {
+    "Name": "Кофе",
+    "Price": 300,
+    "Type": "Simple"
+  },
+  {
+    "Name": "Бананы",
+    "Price": 150,
+    "Type": "Weighted"
+  },
+  {
+    "Name": "Конфеты",
+    "Price": 200,
+    "Type": "Weighted"
+  },
+  {
+    "Name": "Творог",
+    "Price": 150,
+    "Type": "Simple"
+  },
+  {
+    "Name": "Яйца",
+    "Price": 100,
+    "Type": "Simple"
+  },
+  {
+    "Name": "Шоколад",
+    "Price": 80,
+    "Type": "Simple"
+  },
+  {
+    "Name": "Мороженое",
+    "Price": 90,
+    "Type": "Simple"
   }
 ]
