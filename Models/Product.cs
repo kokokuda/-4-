@@ -4,18 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyShop.Models
+// Product.cs
+public class Product
 {
-    public enum ProductType
-    {
-        Simple,
-        Weighted
-    }
-
-    public class Product
-    {
-        public string Name { get; set; }
-        public decimal Price { get; set; }
-        public ProductType Type { get; set; }
-    }
+    public string Name { get; set; }
+    public decimal Price { get; set; } // Цена за единицу или за кг
 }
+
+

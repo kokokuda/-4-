@@ -19,8 +19,27 @@ namespace MyShop.Services
             var result = new List<Product>();
             foreach (var item in rawProducts)
             {
-                ProductType type = item.Type == "Weighted" ? ProductType.Weighted : ProductType.Simple;
-                result.Add(new Product { Name = item.Name, Price = item.Price, Type = type });
+                if (item.Type == "Weighted")
+                {
+                    // Создаем WeightedProduct, Weight по умолчанию 0
+                    var weightedProduct = new WeightedProduct
+                    {
+                        Name = item.Name,
+                        Price = item.Price,
+                        Weight = 0
+                    };
+                    result.Add(weightedProduct);
+                }
+                else
+                {
+                    // Просто Product
+                    var product = new Product
+                    {
+                        Name = item.Name,
+                        Price = item.Price
+                    };
+                    result.Add(product);
+                }
             }
 
             return result;

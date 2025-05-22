@@ -9,47 +9,50 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using MyShop.Models;
 using MyShop.Services;
+using MyShop.Views;
+using MyShop.Presenters;
 
 namespace MyShop
 {
-    public partial class MainView : Form
+    public partial class MainView : Form, IMainView
     {
+        private MainPresenter presenter;
+
         public MainView()
         {
             InitializeComponent();
-            this.Load += MainForm_Load;
+
+            // Создаем презентер и передаем ему эту форму
+            presenter = new MainPresenter(this);
+
+            this.Load += MainView_Load;
         }
 
-        private List<Product> products;
-
-        private void MainForm_Load(object sender, EventArgs e)
+        private void MainView_Load(object sender, System.EventArgs e)
         {
-            // Загружаем товары из JSON
-            products = ProductFactory.LoadProducts("products.json");
+            // При загрузке формы вызываем у презентера загрузку продуктов
+            presenter.LoadProducts();
+        }
 
-            // Отключаем автогенерацию колонок
+        // Реализация интерфейсного метода — отображаем продукты в таблице
+        public void DisplayProducts(List<Product> products)
+        {
             dataGridViewProducts.AutoGenerateColumns = false;
-            // Очищаем старые колонки
             dataGridViewProducts.Columns.Clear();
 
-            // Добавляем колонку Название
             dataGridViewProducts.Columns.Add(new DataGridViewTextBoxColumn
             {
                 DataPropertyName = "Name",
                 HeaderText = "Название"
             });
 
-            // Добавляем колонку Цена
             dataGridViewProducts.Columns.Add(new DataGridViewTextBoxColumn
             {
                 DataPropertyName = "Price",
                 HeaderText = "Цена"
             });
 
-            // Привязываем список товаров к таблице
             dataGridViewProducts.DataSource = products;
         }
-
-
     }
 }
