@@ -3,36 +3,72 @@
   "WorkspaceRootPath": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\views\\weightinputform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\weightinputform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|c:\\users\\orion\\desktop\\c#\\myshop\\views\\buyersettingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\buyersettingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|c:\\users\\orion\\desktop\\c#\\myshop\\views\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|c:\\users\\orion\\desktop\\c#\\myshop\\presenters\\buyersettingspresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:presenters\\buyersettingspresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\views\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|c:\\users\\orion\\desktop\\c#\\myshop\\views\\buyersettingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\buyersettingsform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\views\\weightinputform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\weightinputform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\views\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\mainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|c:\\users\\orion\\desktop\\c#\\myshop\\views\\weightinputform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\weightinputform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\models\\buyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:models\\buyer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\views\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|c:\\users\\orion\\desktop\\c#\\myshop\\views\\ibuyersettingsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\ibuyersettingsview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|c:\\users\\orion\\desktop\\c#\\myshop\\services\\cashpaymentstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:services\\cashpaymentstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\services\\ipaymentstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:services\\ipaymentstrategy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\presenters\\cartpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:presenters\\cartpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\models\\weightedproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:models\\weightedproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\views\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\imainview.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\views\\weightinputform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:views\\weightinputform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\models\\weightedproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:models\\weightedproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{5D89F550-F5CD-4277-A9EC-317C4695E2F0}|..\\MyShop.Tests\\MyShop.Tests.csproj|c:\\users\\orion\\desktop\\c#\\myshop.tests\\models\\weightedproduct.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -49,14 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\services\\productfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:services\\productfactory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:presenters\\mainpresenter.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|solutionrelative:models\\cartitem.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B3B81AA3-0320-429D-AB09-2E9AD3E200FB}|MyShop.csproj|C:\\Users\\Orion\\Desktop\\C#\\MyShop\\models\\cart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -81,7 +109,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 9,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -109,7 +137,173 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BuyerSettingsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\BuyerSettingsForm.cs",
+              "RelativeDocumentMoniker": "Views\\BuyerSettingsForm.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\BuyerSettingsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Views\\BuyerSettingsForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T10:27:02.876Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "BuyerSettingsForm.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\BuyerSettingsForm.cs",
+              "RelativeDocumentMoniker": "Views\\BuyerSettingsForm.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\BuyerSettingsForm.cs",
+              "RelativeToolTip": "Views\\BuyerSettingsForm.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAAAAwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T10:37:46.557Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 3,
+              "Title": "MainView.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\MainView.cs",
+              "RelativeDocumentMoniker": "Views\\MainView.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\MainView.cs",
+              "RelativeToolTip": "Views\\MainView.cs",
+              "ViewState": "AgIAAKwAAAAAAAAAAAAYwMUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T10:43:24.338Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Presenters\\MainPresenter.cs",
+              "RelativeDocumentMoniker": "Presenters\\MainPresenter.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Presenters\\MainPresenter.cs",
+              "RelativeToolTip": "Presenters\\MainPresenter.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAkwD4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:55:35.397Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BuyerSettingsPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Presenters\\BuyerSettingsPresenter.cs",
+              "RelativeDocumentMoniker": "Presenters\\BuyerSettingsPresenter.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Presenters\\BuyerSettingsPresenter.cs",
+              "RelativeToolTip": "Presenters\\BuyerSettingsPresenter.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAYwCgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T11:56:58.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "WeightInputForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\WeightInputForm.cs",
+              "RelativeDocumentMoniker": "Views\\WeightInputForm.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\WeightInputForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Views\\WeightInputForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T18:30:51.226Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "MainView.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\MainView.cs",
+              "RelativeDocumentMoniker": "Views\\MainView.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\MainView.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "RelativeToolTip": "Views\\MainView.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-20T17:42:40.947Z",
+              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Buyer.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Models\\Buyer.cs",
+              "RelativeDocumentMoniker": "Models\\Buyer.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Models\\Buyer.cs",
+              "RelativeToolTip": "Models\\Buyer.cs",
+              "ViewState": "AgIAAE4AAAAAAAAAAAAYwGQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T04:42:50.845Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "CashPaymentStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Services\\CashPaymentStrategy.cs",
+              "RelativeDocumentMoniker": "Services\\CashPaymentStrategy.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Services\\CashPaymentStrategy.cs",
+              "RelativeToolTip": "Services\\CashPaymentStrategy.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAwwBUAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T04:35:17.974Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "IBuyerSettingsView.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\IBuyerSettingsView.cs",
+              "RelativeDocumentMoniker": "Views\\IBuyerSettingsView.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\IBuyerSettingsView.cs",
+              "RelativeToolTip": "Views\\IBuyerSettingsView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-24T10:37:21.605Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "IPaymentStrategy.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Services\\IPaymentStrategy.cs",
+              "RelativeDocumentMoniker": "Services\\IPaymentStrategy.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Services\\IPaymentStrategy.cs",
+              "RelativeToolTip": "Services\\IPaymentStrategy.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-23T04:34:28.766Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CartPresenter.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Presenters\\CartPresenter.cs",
+              "RelativeDocumentMoniker": "Presenters\\CartPresenter.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Presenters\\CartPresenter.cs",
+              "RelativeToolTip": "Presenters\\CartPresenter.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAQwB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:39:05.881Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IMainView.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\IMainView.cs",
+              "RelativeDocumentMoniker": "Views\\IMainView.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\IMainView.cs",
+              "RelativeToolTip": "Views\\IMainView.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwA8AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:54:22.88Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
               "Title": "WeightInputForm.cs",
               "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\WeightInputForm.cs",
               "RelativeDocumentMoniker": "Views\\WeightInputForm.cs",
@@ -122,140 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "test_products.json",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\test_products.json",
-              "RelativeDocumentMoniker": "..\\MyShop.Tests\\test_products.json",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\test_products.json",
-              "RelativeToolTip": "..\\MyShop.Tests\\test_products.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-05-22T15:08:37.22Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "MainView.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\MainView.cs",
-              "RelativeDocumentMoniker": "Views\\MainView.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\MainView.cs",
-              "RelativeToolTip": "Views\\MainView.cs",
-              "ViewState": "AgIAAHgAAAAAAAAAAAAowIYAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T10:43:24.338Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WeightInputForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\WeightInputForm.cs",
-              "RelativeDocumentMoniker": "Views\\WeightInputForm.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\WeightInputForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Views\\WeightInputForm.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T18:30:51.226Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "MainView.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\MainView.cs",
-              "RelativeDocumentMoniker": "Views\\MainView.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\MainView.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "RelativeToolTip": "Views\\MainView.cs [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-20T17:42:40.947Z",
-              "EditorCaption": " [\u041A\u043E\u043D\u0441\u0442\u0440\u0443\u043A\u0442\u043E\u0440]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "WeightedProduct.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Models\\WeightedProduct.cs",
-              "RelativeDocumentMoniker": "Models\\WeightedProduct.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Models\\WeightedProduct.cs",
-              "RelativeToolTip": "Models\\WeightedProduct.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T16:29:32.668Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "ProductFactoryTests.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\ProductFactoryTests.cs",
-              "RelativeDocumentMoniker": "..\\MyShop.Tests\\ProductFactoryTests.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\ProductFactoryTests.cs",
-              "RelativeToolTip": "..\\MyShop.Tests\\ProductFactoryTests.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T15:09:16.171Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ProductFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\Services\\ProductFactory.cs",
-              "RelativeDocumentMoniker": "..\\MyShop.Tests\\Services\\ProductFactory.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\Services\\ProductFactory.cs",
-              "RelativeToolTip": "..\\MyShop.Tests\\Services\\ProductFactory.cs",
-              "ViewState": "AgIAACkAAAAAAAAAAAAwwDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T17:04:31.99Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "WeightedProduct.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\Models\\WeightedProduct.cs",
-              "RelativeDocumentMoniker": "..\\MyShop.Tests\\Models\\WeightedProduct.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\Models\\WeightedProduct.cs",
-              "RelativeToolTip": "..\\MyShop.Tests\\Models\\WeightedProduct.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T17:07:22.583Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MyShop.Tests.csproj",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\MyShop.Tests.csproj",
-              "RelativeDocumentMoniker": "..\\MyShop.Tests\\MyShop.Tests.csproj",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\MyShop.Tests.csproj",
-              "RelativeToolTip": "..\\MyShop.Tests\\MyShop.Tests.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-05-22T15:09:00.353Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "CartPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Presenters\\CartPresenter.cs",
-              "RelativeDocumentMoniker": "Presenters\\CartPresenter.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Presenters\\CartPresenter.cs",
-              "RelativeToolTip": "Presenters\\CartPresenter.cs",
-              "ViewState": "AgIAACoAAAAAAAAAAAAYwEIAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T16:39:05.881Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "IMainView.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\IMainView.cs",
-              "RelativeDocumentMoniker": "Views\\IMainView.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Views\\IMainView.cs",
-              "RelativeToolTip": "Views\\IMainView.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T16:54:22.88Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 15,
               "Title": "Product.cs",
               "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Models\\Product.cs",
               "RelativeDocumentMoniker": "Models\\Product.cs",
@@ -264,30 +325,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-20T17:49:29.1Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "ProductFactory.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Services\\ProductFactory.cs",
-              "RelativeDocumentMoniker": "Services\\ProductFactory.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Services\\ProductFactory.cs",
-              "RelativeToolTip": "Services\\ProductFactory.cs",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAgwDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-21T10:28:59.949Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "MainPresenter.cs",
-              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Presenters\\MainPresenter.cs",
-              "RelativeDocumentMoniker": "Presenters\\MainPresenter.cs",
-              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Presenters\\MainPresenter.cs",
-              "RelativeToolTip": "Presenters\\MainPresenter.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAswBEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-22T16:55:35.397Z"
             },
             {
               "$type": "Document",
@@ -303,7 +340,91 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 18,
+              "Title": "ProductFactoryTests.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\ProductFactoryTests.cs",
+              "RelativeDocumentMoniker": "..\\MyShop.Tests\\ProductFactoryTests.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\ProductFactoryTests.cs",
+              "RelativeToolTip": "..\\MyShop.Tests\\ProductFactoryTests.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T15:09:16.171Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "ProductFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\Services\\ProductFactory.cs",
+              "RelativeDocumentMoniker": "..\\MyShop.Tests\\Services\\ProductFactory.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\Services\\ProductFactory.cs",
+              "RelativeToolTip": "..\\MyShop.Tests\\Services\\ProductFactory.cs",
+              "ViewState": "AgIAACkAAAAAAAAAAAAwwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T17:04:31.99Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "test_products.json",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\test_products.json",
+              "RelativeDocumentMoniker": "..\\MyShop.Tests\\test_products.json",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\test_products.json",
+              "RelativeToolTip": "..\\MyShop.Tests\\test_products.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-05-22T15:08:37.22Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "WeightedProduct.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\Models\\WeightedProduct.cs",
+              "RelativeDocumentMoniker": "..\\MyShop.Tests\\Models\\WeightedProduct.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\Models\\WeightedProduct.cs",
+              "RelativeToolTip": "..\\MyShop.Tests\\Models\\WeightedProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T17:07:22.583Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "MyShop.Tests.csproj",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\MyShop.Tests.csproj",
+              "RelativeDocumentMoniker": "..\\MyShop.Tests\\MyShop.Tests.csproj",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop.Tests\\MyShop.Tests.csproj",
+              "RelativeToolTip": "..\\MyShop.Tests\\MyShop.Tests.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-05-22T15:09:00.353Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "WeightedProduct.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Models\\WeightedProduct.cs",
+              "RelativeDocumentMoniker": "Models\\WeightedProduct.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Models\\WeightedProduct.cs",
+              "RelativeToolTip": "Models\\WeightedProduct.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-22T16:29:32.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "ProductFactory.cs",
+              "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Services\\ProductFactory.cs",
+              "RelativeDocumentMoniker": "Services\\ProductFactory.cs",
+              "ToolTip": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Services\\ProductFactory.cs",
+              "RelativeToolTip": "Services\\ProductFactory.cs",
+              "ViewState": "AgIAAB4AAAAAAAAAAAAgwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-21T10:28:59.949Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
               "Title": "Cart.cs",
               "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\Models\\Cart.cs",
               "RelativeDocumentMoniker": "Models\\Cart.cs",
@@ -315,7 +436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 24,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\.gitignore",
               "RelativeDocumentMoniker": ".gitignore",
@@ -327,7 +448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 25,
               "Title": "products.json",
               "DocumentMoniker": "C:\\Users\\Orion\\Desktop\\C#\\MyShop\\products.json",
               "RelativeDocumentMoniker": "products.json",

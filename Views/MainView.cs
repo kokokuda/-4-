@@ -23,6 +23,11 @@ namespace MyShop
         public event Action<CartItem> RemoveProductRequested;
         public event Action ClearCartRequested;
 
+
+        // События из IMainView
+        public event EventHandler OpenSettingsClicked;
+
+
         private CartPresenter cartPresenter;
         private Cart cart;
 
@@ -45,6 +50,9 @@ namespace MyShop
             btnAddToCart.Click += BtnAddToCart_Click;
             btnRemoveFromCart.Click += BtnRemoveFromCart_Click;
             btnClearCart.Click += BtnClearCart_Click;
+
+            // Подпишемся на настройку клиента
+            btnOpenSettings.Click += (s, e) => OpenSettingsClicked?.Invoke(this, EventArgs.Empty);
         }
 
         private void MainView_Load(object sender, System.EventArgs e)
@@ -144,6 +152,12 @@ namespace MyShop
                         return;
                     }
                 }
+
+                if (weight <= 0)
+                {
+                    MessageBox.Show("Вес должен быть больше 0.");
+                    return;
+                }
             }
 
             AddProductRequested?.Invoke(product, weight);
@@ -169,6 +183,15 @@ namespace MyShop
         private void BtnClearCart_Click(object sender, EventArgs e)
         {
             ClearCartRequested?.Invoke();
+        }
+
+
+        // Метод обновления баланса
+        public void UpdateBalances(decimal cash, decimal card, decimal bonus)
+        {
+            lblCashBalance.Text = $"Наличные: {cash:C2}";
+            lblCardBalance.Text = $"Карта: {card:C2}";
+            lblBonusBalance.Text = $"Бонусы: {bonus:C2}";
         }
     }
 }

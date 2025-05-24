@@ -49,12 +49,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Models\Buyer.cs" />
     <Compile Include="Models\Cart.cs" />
     <Compile Include="Models\CartItem.cs" />
     <Compile Include="Models\WeightedProduct.cs" />
+    <Compile Include="Presenters\BuyerSettingsPresenter.cs" />
     <Compile Include="Presenters\CartPresenter.cs" />
     <Compile Include="Presenters\MainPresenter.cs" />
+    <Compile Include="Services\CashPaymentStrategy.cs" />
+    <Compile Include="Services\IPaymentStrategy.cs" />
     <Compile Include="Services\ProductFactory.cs" />
+    <Compile Include="Views\BuyerSettingsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\BuyerSettingsForm.Designer.cs">
+      <DependentUpon>BuyerSettingsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\IBuyerSettingsView.cs" />
     <Compile Include="Views\IMainView.cs" />
     <Compile Include="Views\MainView.cs">
       <SubType>Form</SubType>
@@ -80,6 +91,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Views\BuyerSettingsForm.resx">
+      <DependentUpon>BuyerSettingsForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\MainView.resx">
       <DependentUpon>MainView.cs</DependentUpon>
     </EmbeddedResource>
