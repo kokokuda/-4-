@@ -47,13 +47,13 @@
             this.dataGridViewProducts.AllowUserToAddRows = false;
             this.dataGridViewProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProducts.Location = new System.Drawing.Point(338, 42);
+            this.dataGridViewProducts.Location = new System.Drawing.Point(323, 42);
             this.dataGridViewProducts.Name = "dataGridViewProducts";
             this.dataGridViewProducts.ReadOnly = true;
             this.dataGridViewProducts.RowHeadersWidth = 51;
             this.dataGridViewProducts.RowTemplate.Height = 24;
             this.dataGridViewProducts.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewProducts.Size = new System.Drawing.Size(310, 359);
+            this.dataGridViewProducts.Size = new System.Drawing.Size(355, 359);
             this.dataGridViewProducts.TabIndex = 0;
             // 
             // dataGridViewCart
@@ -61,7 +61,7 @@
             this.dataGridViewCart.AllowUserToAddRows = false;
             this.dataGridViewCart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCart.Location = new System.Drawing.Point(698, 42);
+            this.dataGridViewCart.Location = new System.Drawing.Point(716, 42);
             this.dataGridViewCart.Name = "dataGridViewCart";
             this.dataGridViewCart.ReadOnly = true;
             this.dataGridViewCart.RowHeadersWidth = 51;
@@ -72,7 +72,7 @@
             // 
             // btnAddToCart
             // 
-            this.btnAddToCart.Location = new System.Drawing.Point(435, 417);
+            this.btnAddToCart.Location = new System.Drawing.Point(436, 407);
             this.btnAddToCart.Name = "btnAddToCart";
             this.btnAddToCart.Size = new System.Drawing.Size(117, 64);
             this.btnAddToCart.TabIndex = 2;
@@ -81,7 +81,7 @@
             // 
             // btnRemoveFromCart
             // 
-            this.btnRemoveFromCart.Location = new System.Drawing.Point(798, 417);
+            this.btnRemoveFromCart.Location = new System.Drawing.Point(716, 407);
             this.btnRemoveFromCart.Name = "btnRemoveFromCart";
             this.btnRemoveFromCart.Size = new System.Drawing.Size(113, 64);
             this.btnRemoveFromCart.TabIndex = 3;
@@ -90,7 +90,7 @@
             // 
             // btnClearCart
             // 
-            this.btnClearCart.Location = new System.Drawing.Point(931, 417);
+            this.btnClearCart.Location = new System.Drawing.Point(847, 407);
             this.btnClearCart.Name = "btnClearCart";
             this.btnClearCart.Size = new System.Drawing.Size(111, 64);
             this.btnClearCart.TabIndex = 4;
@@ -101,9 +101,9 @@
             // 
             this.lblTotal.AutoSize = true;
             this.lblTotal.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblTotal.Location = new System.Drawing.Point(849, 505);
+            this.lblTotal.Location = new System.Drawing.Point(976, 433);
             this.lblTotal.Name = "lblTotal";
-            this.lblTotal.Size = new System.Drawing.Size(109, 39);
+            this.lblTotal.Size = new System.Drawing.Size(105, 38);
             this.lblTotal.TabIndex = 5;
             this.lblTotal.Text = "Итого";
             // 
@@ -150,7 +150,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1075, 565);
+            this.ClientSize = new System.Drawing.Size(1145, 565);
             this.Controls.Add(this.btnOpenSettings);
             this.Controls.Add(this.lblBonusBalance);
             this.Controls.Add(this.lblCardBalance);

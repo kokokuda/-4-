@@ -56,6 +56,7 @@
     <Compile Include="Presenters\BuyerSettingsPresenter.cs" />
     <Compile Include="Presenters\CartPresenter.cs" />
     <Compile Include="Presenters\MainPresenter.cs" />
+    <Compile Include="Presenters\PaymentPresenter.cs" />
     <Compile Include="Services\CashPaymentStrategy.cs" />
     <Compile Include="Services\IPaymentStrategy.cs" />
     <Compile Include="Services\ProductFactory.cs" />
@@ -66,6 +67,7 @@
       <DependentUpon>BuyerSettingsForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\IBuyerSettingsView.cs" />
+    <Compile Include="Views\ICartView.cs" />
     <Compile Include="Views\IMainView.cs" />
     <Compile Include="Views\MainView.cs">
       <SubType>Form</SubType>

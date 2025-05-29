@@ -3,9 +3,6 @@ using MyShop.Services;
 using MyShop.Views;
 using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace MyShop.Presenters
 {
@@ -13,34 +10,30 @@ namespace MyShop.Presenters
     {
         private readonly IMainView view;
 
-        // Модель покупателя, храним его текущие балансы и корзину
-        private Buyer buyer;
+        public Buyer Buyer { get; private set; }
+        public List<Product> Products { get; private set; }
+        public string ProductFilePath { get; } = "products.json";
 
         public MainPresenter(IMainView view)
         {
             this.view = view;
+            Buyer = new Buyer(0m, 0m, 0m, new Cart());
 
-            // Инициализируем покупателя с нулевыми балансами и пустой корзиной
-            buyer = new Buyer(0m, 0m, 0m, new Cart());
-
-            // Подписываемся на событие "Открыть настройки"
-            this.view.OpenSettingsClicked += OnOpenSettingsClicked;
-
-            // При старте обновляем отображение баланса
+            view.OpenSettingsClicked += OnOpenSettingsClicked;
             UpdateViewBalances();
         }
 
         // Метод загрузки продуктов из файла и отображения их во вью
         public void LoadProducts()
         {
-            var products = ProductFactory.LoadProducts("products.json");
-            view.DisplayProducts(products);
+            Products = ProductFactory.LoadProducts(ProductFilePath);
+            view.DisplayProducts(Products);
         }
 
         // Метод для отображения актуального состояния баланса на главной форме
         private void UpdateViewBalances()
         {
-            view.UpdateBalances(buyer.Cash, buyer.Card, buyer.BonusPoints);
+            view.UpdateBalances(Buyer.Cash, Buyer.Card, Buyer.BonusPoints);
         }
 
         // Обработчик клика по кнопке "Настройки"
@@ -48,11 +41,7 @@ namespace MyShop.Presenters
         {
             // Создаем форму настроек покупателя
             var settingsForm = new BuyerSettingsForm();
-
-            // Создаем презентер для настроек, передаём ему форму и покупателя
-            var settingsPresenter = new BuyerSettingsPresenter(settingsForm, buyer);
-
-            // Показываем форму настроек как модальное окно
+            var settingsPresenter = new BuyerSettingsPresenter(settingsForm, Buyer);
             settingsForm.ShowDialog();
 
             // После закрытия формы обновляем отображение баланса

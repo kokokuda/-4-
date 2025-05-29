@@ -26,7 +26,8 @@ namespace MyShop.Services
                     {
                         Name = item.Name,
                         Price = item.Price,
-                        Weight = 0
+                        Weight = 0,
+                        Quantity = item.Quantity
                     };
                     result.Add(weightedProduct);
                 }
@@ -36,7 +37,8 @@ namespace MyShop.Services
                     var product = new Product
                     {
                         Name = item.Name,
-                        Price = item.Price
+                        Price = item.Price,
+                        Quantity = item.Quantity
                     };
                     result.Add(product);
                 }
@@ -50,6 +52,7 @@ namespace MyShop.Services
             public string Name { get; set; }
             public decimal Price { get; set; }
             public string Type { get; set; }
+            public decimal Quantity { get; set; }
         }
     }
 }

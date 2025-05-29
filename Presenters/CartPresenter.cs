@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using MyShop.Models;
 using System;
 using System.Collections.Generic;
+using MyShop.Views;
 
 
 namespace MyShop.Presenters
@@ -53,14 +54,4 @@ namespace MyShop.Presenters
         }
     }
 
-    // Интерфейс View (чтобы Presenter мог с ним работать)
-    public interface ICartView
-    {
-        event Action<Product, decimal> AddProductRequested;
-        event Action<CartItem> RemoveProductRequested;
-        event Action ClearCartRequested;
-
-        void DisplayCartItems(IReadOnlyList<CartItem> items);
-        void DisplayTotal(decimal totalPrice);
-    }
 }

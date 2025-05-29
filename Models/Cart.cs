@@ -34,5 +34,8 @@ namespace MyShop.Models
         {
             return items.Sum(item => item.TotalPrice);
         }
+
+        // Добавляем свойство для удобства
+        public decimal TotalPrice => GetTotalPrice();
     }
 }
