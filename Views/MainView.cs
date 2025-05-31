@@ -31,7 +31,10 @@
             private CartPresenter cartPresenter;
             private Cart cart;
 
-            // Храним текущие элементы корзины, чтобы по индексу получать CartItem
+           
+
+
+        // Храним текущие элементы корзины, чтобы по индексу получать CartItem
             private IReadOnlyList<CartItem> cartItems;
 
             public MainView()
@@ -54,9 +57,9 @@
                 // Подпишемся на настройку клиента
                 btnOpenSettings.Click += (s, e) => OpenSettingsClicked?.Invoke(this, EventArgs.Empty);
 
+
              
-            
-            }
+        }
 
             private void MainView_Load(object sender, System.EventArgs e)
             {
@@ -202,6 +205,10 @@
                 lblCardBalance.Text = $"Карта: {card:C2}";
                 lblBonusBalance.Text = $"Бонусы: {bonus:C2}";
             }
+
+
+
+            
 
 
         

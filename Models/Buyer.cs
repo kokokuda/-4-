@@ -20,8 +20,6 @@ namespace MyShop.Models
 
         public Cart Cart { get; }
 
-        private IPaymentStrategy paymentStrategy;
-
         public Buyer(decimal cash, decimal card, decimal bonusPoints, Cart cart)
         {
             Cash = cash;
@@ -30,23 +28,7 @@ namespace MyShop.Models
             Cart = cart;
         }
 
-        // Установка стратегии оплаты
-        public void SetPaymentStrategy(IPaymentStrategy strategy)
-        {
-            paymentStrategy = strategy;
-        }
-
-        /// Пытается оплатить сумму totalPrice с помощью текущей стратегии.
-        /// Возвращает true, если оплата прошла успешно, иначе false.
-        public bool TryPay(decimal totalPrice)
-        {
-            if (paymentStrategy == null)
-                throw new InvalidOperationException("Payment strategy is not set.");
-
-            return paymentStrategy.Pay(this, totalPrice);
-        }
-
-        // Методы уменьшения балансов (вызываются стратегиями)
+        // Методы уменьшения балансов
         public void DeductCash(decimal amount)
         {
             if (amount > Cash)
@@ -90,9 +72,7 @@ namespace MyShop.Models
             BonusPoints += points;
         }
 
-
-
-        // Обновление баланса
+        // Обновление баланса (опционально)
         public void UpdateBalances(decimal cash, decimal card, decimal bonus)
         {
             Cash = cash;

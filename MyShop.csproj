@@ -57,8 +57,11 @@
     <Compile Include="Presenters\CartPresenter.cs" />
     <Compile Include="Presenters\MainPresenter.cs" />
     <Compile Include="Presenters\PaymentPresenter.cs" />
-    <Compile Include="Services\CashPaymentStrategy.cs" />
-    <Compile Include="Services\IPaymentStrategy.cs" />
+    <Compile Include="Services\ICommand.cs" />
+    <Compile Include="Services\PayByBonusCommand.cs" />
+    <Compile Include="Services\PayByCardCommand.cs" />
+    <Compile Include="Services\PayByCashCommand.cs" />
+    <Compile Include="Services\PaymentCommandInvoker.cs" />
     <Compile Include="Services\ProductFactory.cs" />
     <Compile Include="Views\BuyerSettingsForm.cs">
       <SubType>Form</SubType>
