@@ -20,7 +20,11 @@ namespace MyShop.Presenters
             Buyer = new Buyer(0m, 0m, 0m, new Cart());
 
             view.OpenSettingsClicked += OnOpenSettingsClicked;
+
+            // Обновим отображение баланса при старте
             UpdateViewBalances();
+
+            view.AmountChanged += OnAmountChanged; // обновления остатка к оплате
         }
 
         // Метод загрузки продуктов из файла и отображения их во вью
@@ -39,13 +43,54 @@ namespace MyShop.Presenters
         // Обработчик клика по кнопке "Настройки"
         private void OnOpenSettingsClicked(object sender, EventArgs e)
         {
-            // Создаем форму настроек покупателя
             var settingsForm = new BuyerSettingsForm();
             var settingsPresenter = new BuyerSettingsPresenter(settingsForm, Buyer);
             settingsForm.ShowDialog();
 
-            // После закрытия формы обновляем отображение баланса
+            // Обновим баланс после изменения
             UpdateViewBalances();
+        }
+
+        // Метод выполнения команды оплаты
+        public void ExecuteCommand(ICommand command)
+        {
+            command.Execute();            // Выполняем действие
+            UpdateViewBalances();         // Обновляем отображение
+        }
+
+
+        private void OnAmountChanged(object sender, EventArgs e)
+        {
+            decimal total = GetCartTotal(); // Получи сумму из корзины
+            decimal entered = GetAmountFromView(); // Сумма, которую ввел пользователь
+            decimal remaining = Math.Max(0, total - entered);
+            view.UpdateRemaining(remaining);
+        }
+
+
+        private decimal GetCartTotal()
+        {
+            return Buyer.Cart.GetTotalPrice(); 
+        }
+
+        private decimal GetAmountFromView()
+        {
+            if (decimal.TryParse(view.GetEnteredAmount(), out var amount))
+                return amount;
+            return 0;
+        }
+
+
+
+        /// <summary>
+        /// ///////////////
+        /// </summary>
+        private decimal remainingAmount;
+
+        public void InitializeRemainingAmount(decimal total)
+        {
+            remainingAmount = total;
+            view.UpdateRemaining(remainingAmount);
         }
     }
 }

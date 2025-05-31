@@ -14,5 +14,10 @@ namespace MyShop.Views
         event EventHandler OpenSettingsClicked;
 
         void UpdateBalances(decimal cash, decimal card, decimal bonus);
+
+        void UpdateRemaining(decimal remaining); // Обновление labelRemaining
+        event EventHandler AmountChanged;        // Событие изменения суммы оплаты
+
+        string GetEnteredAmount(); // получение суммы
     }
 }

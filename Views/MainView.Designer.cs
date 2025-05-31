@@ -159,7 +159,7 @@
             this.labelRemaining.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.labelRemaining.Location = new System.Drawing.Point(720, 524);
             this.labelRemaining.Name = "labelRemaining";
-            this.labelRemaining.Size = new System.Drawing.Size(322, 39);
+            this.labelRemaining.Size = new System.Drawing.Size(311, 38);
             this.labelRemaining.TabIndex = 13;
             this.labelRemaining.Text = "Осталось оплатить";
             // 
@@ -177,7 +177,7 @@
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.label1.Location = new System.Drawing.Point(12, 551);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(294, 39);
+            this.label1.Size = new System.Drawing.Size(285, 38);
             this.label1.TabIndex = 15;
             this.label1.Text = "Сколько списать:";
             // 
@@ -212,9 +212,9 @@
             // 
             this.labelStatus.AutoSize = true;
             this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelStatus.Location = new System.Drawing.Point(831, 635);
+            this.labelStatus.Location = new System.Drawing.Point(835, 636);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(127, 39);
+            this.labelStatus.Size = new System.Drawing.Size(123, 38);
             this.labelStatus.TabIndex = 19;
             this.labelStatus.Text = "Статус";
             // 

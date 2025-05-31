@@ -11,8 +11,9 @@
     using MyShop.Services;
     using MyShop.Views;
     using MyShop.Presenters;
+    using System.Globalization;
 
-    namespace MyShop
+namespace MyShop
     {
         public partial class MainView : Form, IMainView, ICartView
         {
@@ -26,15 +27,14 @@
 
             // События из IMainView
             public event EventHandler OpenSettingsClicked;
-
+            public event EventHandler AmountChanged;
 
             private CartPresenter cartPresenter;
             private Cart cart;
 
-           
 
 
-        // Храним текущие элементы корзины, чтобы по индексу получать CartItem
+            // Храним текущие элементы корзины, чтобы по индексу получать CartItem
             private IReadOnlyList<CartItem> cartItems;
 
             public MainView()
@@ -57,11 +57,16 @@
                 // Подпишемся на настройку клиента
                 btnOpenSettings.Click += (s, e) => OpenSettingsClicked?.Invoke(this, EventArgs.Empty);
 
+                // Обработка кнопок оплаты
+                btnPayCash.Click += BtnPayCash_Click;
+                btnPayCard.Click += BtnPayCard_Click;
+                btnPayBonus.Click += BtnPayBonus_Click;
 
-             
+
+                textBoxAmount.TextChanged += (s, e) => AmountChanged?.Invoke(this, EventArgs.Empty);
         }
 
-            private void MainView_Load(object sender, System.EventArgs e)
+        private void MainView_Load(object sender, System.EventArgs e)
             {
                 // При загрузке формы вызываем у презентера загрузку продуктов
                 presenter.LoadProducts();
@@ -208,10 +213,48 @@
 
 
 
-            
-
-
-        
-           
+        private void TryPayWith(Func<decimal, ICommand> commandFactory)
+        {
+            if (decimal.TryParse(textBoxAmount.Text, out decimal amount) && amount > 0)
+            {
+                var command = commandFactory(amount);
+                presenter.ExecuteCommand(command);
+                MessageBox.Show($"Оплата прошла успешно на сумму {amount:C2}", "Успех");
+            }
+            else
+            {
+                MessageBox.Show("Введите корректную сумму оплаты.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
         }
+
+        private void BtnPayCash_Click(object sender, EventArgs e)
+            {
+                TryPayWith(amount =>
+                    new PayByCashCommand(presenter.Buyer, amount));
+            }
+
+            private void BtnPayCard_Click(object sender, EventArgs e)
+            {
+                TryPayWith(amount =>
+                    new PayByCardCommand(presenter.Buyer, amount));
+            }
+
+            private void BtnPayBonus_Click(object sender, EventArgs e)
+            {
+                TryPayWith(amount =>
+                    new PayByBonusCommand(presenter.Buyer, amount));
+            }
+
+            public void UpdateRemaining(decimal remaining)
+            {
+                labelRemaining.Text = $"Осталось оплатить: {remaining} ₽";
+            }
+
+
+        public string GetEnteredAmount()
+        {
+            return textBoxAmount.Text;
+        }
+
     }
+}
