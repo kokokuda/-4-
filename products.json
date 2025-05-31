@@ -2,11 +2,67 @@
   {
     "Name": "Хлеб",
     "Price": 50,
-    "Type": "Simple"
+    "Type": "Simple",
+    "Quantity": 20
   },
   {
     "Name": "Яблоки",
     "Price": 100,
-    "Type": "Weighted"
+    "Type": "Weighted",
+    "Quantity": 30
+  },
+  {
+    "Name": "Молоко",
+    "Price": 70,
+    "Type": "Simple",
+    "Quantity": 15
+  },
+  {
+    "Name": "Груши",
+    "Price": 120,
+    "Type": "Weighted",
+    "Quantity": 10
+  },
+  {
+    "Name": "Кофе",
+    "Price": 300,
+    "Type": "Simple",
+    "Quantity": 4
+  },
+  {
+    "Name": "Бананы",
+    "Price": 150,
+    "Type": "Weighted",
+    "Quantity": 20
+  },
+  {
+    "Name": "Конфеты",
+    "Price": 200,
+    "Type": "Weighted",
+    "Quantity": 50
+  },
+  {
+    "Name": "Творог",
+    "Price": 150,
+    "Type": "Simple",
+    "Quantity": 40
+  },
+  {
+    "Name": "Яйца",
+    "Price": 100,
+    "Type": "Simple",
+    "Quantity": 60
+  },
+  {
+    "Name": "Шоколад",
+    "Price": 80,
+    "Type": "Simple",
+    "Quantity": 70
+  },
+  {
+    "Name": "Мороженое",
+    "Price": 90,
+    "Type": "Simple",
+    "Quantity": 20
   }
 ]

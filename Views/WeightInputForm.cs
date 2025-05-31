@@ -1,0 +1,29 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace MyShop.Views
+{
+    public partial class WeightInputForm : Form
+    {
+
+        public decimal Weight { get; private set; }
+        public WeightInputForm()
+        {
+            InitializeComponent();
+        }
+
+        private void btnWeigh_Click(object sender, EventArgs e)
+        {
+            Weight = numericUpDownWeight.Value;
+            DialogResult = DialogResult.OK;
+            Close();
+        }
+    }
+}
