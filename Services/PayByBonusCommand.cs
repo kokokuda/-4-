@@ -20,6 +20,9 @@ namespace MyShop.Services
 
         public void Execute()
         {
+            if (buyer.BonusPoints < amount)
+                throw new InvalidOperationException("Недостаточно бонусных средств");
+
             buyer.DeductBonusPoints(amount);
         }
     }

@@ -157,7 +157,7 @@
             // 
             this.labelRemaining.AutoSize = true;
             this.labelRemaining.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelRemaining.Location = new System.Drawing.Point(720, 524);
+            this.labelRemaining.Location = new System.Drawing.Point(722, 539);
             this.labelRemaining.Name = "labelRemaining";
             this.labelRemaining.Size = new System.Drawing.Size(311, 38);
             this.labelRemaining.TabIndex = 13;
@@ -212,17 +212,17 @@
             // 
             this.labelStatus.AutoSize = true;
             this.labelStatus.Font = new System.Drawing.Font("Microsoft Sans Serif", 19.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.labelStatus.Location = new System.Drawing.Point(835, 636);
+            this.labelStatus.Location = new System.Drawing.Point(709, 636);
             this.labelStatus.Name = "labelStatus";
-            this.labelStatus.Size = new System.Drawing.Size(123, 38);
+            this.labelStatus.Size = new System.Drawing.Size(324, 38);
             this.labelStatus.TabIndex = 19;
-            this.labelStatus.Text = "Статус";
+            this.labelStatus.Text = "Требуется оплатить";
             // 
             // MainView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1145, 705);
+            this.ClientSize = new System.Drawing.Size(1212, 705);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.btnPayBonus);
             this.Controls.Add(this.btnPayCard);

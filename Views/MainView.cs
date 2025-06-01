@@ -64,6 +64,24 @@ namespace MyShop
 
 
                 textBoxAmount.TextChanged += (s, e) => AmountChanged?.Invoke(this, EventArgs.Empty);
+
+            AddProductRequested += (product, weight) =>
+            {
+                presenter.Buyer.Cart.AddProduct(product, weight);
+                presenter.UpdateTotalToPayFromCart();
+            };
+
+            RemoveProductRequested += item =>
+            {
+                presenter.Buyer.Cart.RemoveProduct(item);
+                presenter.UpdateTotalToPayFromCart();
+            };
+
+            ClearCartRequested += () =>
+            {
+                presenter.Buyer.Cart.Clear();
+                presenter.UpdateTotalToPayFromCart();
+            };
         }
 
         private void MainView_Load(object sender, System.EventArgs e)
@@ -217,16 +235,22 @@ namespace MyShop
         {
             if (decimal.TryParse(textBoxAmount.Text, out decimal amount) && amount > 0)
             {
-                var command = commandFactory(amount);
-                presenter.ExecuteCommand(command);
-                MessageBox.Show($"Оплата прошла успешно на сумму {amount:C2}", "Успех");
+                try
+                {
+                    var command = commandFactory(amount);
+                    presenter.ExecuteCommand(command, amount);
+                    MessageBox.Show($"Оплата прошла успешно на сумму {amount:C2}", "Успех");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"Ошибка оплаты: {ex.Message}", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
             else
             {
                 MessageBox.Show("Введите корректную сумму оплаты.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
         }
-
         private void BtnPayCash_Click(object sender, EventArgs e)
             {
                 TryPayWith(amount =>
@@ -255,6 +279,22 @@ namespace MyShop
         {
             return textBoxAmount.Text;
         }
+
+
+        public void UpdateStatus(string message)
+        {
+            labelStatus.Text = message;
+        }
+
+        public void LockPaymentButtons(bool locked)
+        {
+            btnPayCash.Enabled = !locked;
+            btnPayCard.Enabled = !locked;
+            btnPayBonus.Enabled = !locked;
+        }
+
+
+        
 
     }
 }

@@ -20,6 +20,9 @@ namespace MyShop.Services
 
         public void Execute()
         {
+            if (buyer.Cash < amount)
+                throw new InvalidOperationException("Недостаточно наличных средств");
+
             buyer.DeductCash(amount); // Списание наличных
         }
     }

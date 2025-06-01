@@ -1,23 +1,33 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using MyShop.Models;
 
 namespace MyShop.Views
 {
     public interface IMainView
     {
-        // Метод, который Presenter будет вызывать, чтобы показать список продуктов на форме
+        // Отобразить список продуктов на форме
         void DisplayProducts(List<Product> products);
 
+        // Событие — пользователь открыл настройки (баланс и т.п.)
         event EventHandler OpenSettingsClicked;
 
+        // Обновить балансы наличных, карты и бонусов на форме
         void UpdateBalances(decimal cash, decimal card, decimal bonus);
 
-        void UpdateRemaining(decimal remaining); // Обновление labelRemaining
-        event EventHandler AmountChanged;        // Событие изменения суммы оплаты
+        // Обновить оставшуюся к оплате сумму (labelRemaining)
+        void UpdateRemaining(decimal remaining);
 
-        string GetEnteredAmount(); // получение суммы
+        // Событие — сумма оплаты в текстбоксе изменилась
+        event EventHandler AmountChanged;
+
+        // Получить сумму, введённую пользователем (из текстбокса)
+        string GetEnteredAmount();
+
+        void UpdateStatus(string message);
+        void LockPaymentButtons(bool locked);
+
+        void DisplayCartItems(IReadOnlyList<CartItem> items);
+        void DisplayTotal(decimal total);
     }
 }

@@ -21,7 +21,6 @@ namespace MyShop.Services
             {
                 if (item.Type == "Weighted")
                 {
-                    // Создаем WeightedProduct, Weight по умолчанию 0
                     var weightedProduct = new WeightedProduct
                     {
                         Name = item.Name,
@@ -33,7 +32,6 @@ namespace MyShop.Services
                 }
                 else
                 {
-                    // Просто Product
                     var product = new Product
                     {
                         Name = item.Name,
@@ -45,6 +43,20 @@ namespace MyShop.Services
             }
 
             return result;
+        }
+
+        public static void SaveProducts(string filePath, List<Product> products)
+        {
+            var rawProducts = products.Select(p => new RawProduct
+            {
+                Name = p.Name,
+                Price = p.Price,
+                Type = p is WeightedProduct ? "Weighted" : "Simple",
+                Quantity = p.Quantity
+            }).ToList();
+
+            var json = JsonConvert.SerializeObject(rawProducts, Formatting.Indented);
+            File.WriteAllText(filePath, json);
         }
 
         private class RawProduct

@@ -17,14 +17,6 @@ namespace MyShop.Services
             commands.Add(command); // Добавляет команду оплаты в список.
         }
 
-        public void ExecuteAll()
-        {
-            foreach (var command in commands)
-            {
-                command.Execute(); // Выполняет все добавленные команды оплаты по порядку.
-            }
-            commands.Clear(); // Очищаем список после выполнения
-        }
 
         public void ClearCommands()
         {
