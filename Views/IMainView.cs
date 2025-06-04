@@ -14,6 +14,8 @@ namespace MyShop.Views
 
         // Обновить балансы наличных, карты и бонусов на форме
         void UpdateBalances(decimal cash, decimal card, decimal bonus);
+        // метод вывести общий баланс
+        void UpdateTotalBalance(decimal totalBalance);
 
         // Обновить оставшуюся к оплате сумму (labelRemaining)
         void UpdateRemaining(decimal remaining);
@@ -29,5 +31,7 @@ namespace MyShop.Views
 
         void DisplayCartItems(IReadOnlyList<CartItem> items);
         void DisplayTotal(decimal total);
+
+        void ShowLowBalanceWarning();
     }
 }

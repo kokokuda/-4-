@@ -49,19 +49,21 @@
             // 
             // btnWeigh
             // 
+            this.btnWeigh.BackColor = System.Drawing.Color.White;
             this.btnWeigh.Font = new System.Drawing.Font("Microsoft Sans Serif", 25.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnWeigh.Location = new System.Drawing.Point(279, 294);
             this.btnWeigh.Name = "btnWeigh";
             this.btnWeigh.Size = new System.Drawing.Size(237, 82);
             this.btnWeigh.TabIndex = 1;
             this.btnWeigh.Text = "Взвесить";
-            this.btnWeigh.UseVisualStyleBackColor = true;
+            this.btnWeigh.UseVisualStyleBackColor = false;
             this.btnWeigh.Click += new System.EventHandler(this.btnWeigh_Click);
             // 
             // WeightInputForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(800, 450);
             this.Controls.Add(this.btnWeigh);
             this.Controls.Add(this.numericUpDownWeight);

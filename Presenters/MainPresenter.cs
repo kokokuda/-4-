@@ -78,6 +78,9 @@ namespace MyShop.Presenters
             {
                 view.UpdateStatus("");
             }
+
+            // Показываем сообщение, если денег не хватает
+            CheckEnoughMoney();
         }
 
         // Выполнение команды оплаты и обновление оставшейся суммы
@@ -139,12 +142,16 @@ namespace MyShop.Presenters
 
             // Обновляем балансы после закрытия формы настроек
             UpdateViewBalances();
+
         }
 
         // Показываем текущие балансы покупателя на форме
         private void UpdateViewBalances()
         {
             view.UpdateBalances(Buyer.Cash, Buyer.Card, Buyer.BonusPoints);
+
+            decimal total = Buyer.Cash + Buyer.Card + Buyer.BonusPoints;
+            view.UpdateTotalBalance(total);
         }
 
         // Событие при вводе суммы оплаты вручную — просто показать текущий остаток (не учитывать как оплату)
@@ -168,6 +175,21 @@ namespace MyShop.Presenters
             return totalToPay > 0 && alreadyPaid >= totalToPay;
         }
 
+        // метод проверки баланса
+        public void CheckEnoughMoney()
+        {
+            var total = Buyer.Cart.GetTotalPrice();
+            var allBalance = Buyer.Cash + Buyer.Card + Buyer.BonusPoints;
+
+            bool notEnough = total > 0 && allBalance < total;
+
+            view.LockPaymentButtons(notEnough); // true = заблокировать
+
+            if (notEnough)
+            {
+                view.ShowLowBalanceWarning();
+            }
+        }
 
         private void DeductFromStock()
         {
@@ -191,6 +213,9 @@ namespace MyShop.Presenters
                         matchingProduct.Quantity = 0;
                 }
             }
+
+
+           
 
             // Сохраняем обратно в файл
             ProductFactory.SaveProducts(ProductFilePath, Products);

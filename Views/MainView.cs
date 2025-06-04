@@ -32,7 +32,7 @@ namespace MyShop
             private CartPresenter cartPresenter;
             private Cart cart;
 
-
+            private decimal totalBalance; // поле для общего баланса пользователя
 
             // Храним текущие элементы корзины, чтобы по индексу получать CartItem
             private IReadOnlyList<CartItem> cartItems;
@@ -229,10 +229,22 @@ namespace MyShop
                 lblBonusBalance.Text = $"Бонусы: {bonus:C2}";
             }
 
+            // Метод для общего баланса пользователя
+            public void UpdateTotalBalance(decimal totalBalance)
+            {
+                lblTotalBalance.Text = $"Общий баланс: {totalBalance:C2}";
+            }
 
 
         private void TryPayWith(Func<decimal, ICommand> commandFactory)
         {
+
+            if (presenter.Buyer.Cart.IsEmpty())
+            {
+                MessageBox.Show("Корзина пуста. Нечего оплачивать.", "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
             if (decimal.TryParse(textBoxAmount.Text, out decimal amount) && amount > 0)
             {
                 try
@@ -293,8 +305,12 @@ namespace MyShop
             btnPayBonus.Enabled = !locked;
         }
 
+        public void ShowLowBalanceWarning()
+        {
+            MessageBox.Show("Недостаточно средств для оплаты всей корзины. Уберите товар.", "Внимание", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+        }
 
-        
+
 
     }
 }

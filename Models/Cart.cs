@@ -35,7 +35,13 @@ namespace MyShop.Models
             return items.Sum(item => item.TotalPrice);
         }
 
-        // Добавляем свойство для удобства
+        public bool IsEmpty()
+        {
+            return !items.Any(); //  true - если корзина пуста
+        }
+
+
+
         public decimal TotalPrice => GetTotalPrice();
     }
 }

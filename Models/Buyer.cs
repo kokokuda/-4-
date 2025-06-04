@@ -79,5 +79,7 @@ namespace MyShop.Models
             Card = card;
             BonusPoints = bonus;
         }
+
+        public decimal TotalBalance => Cash + Card + BonusPoints;
     }
 }

@@ -99,13 +99,14 @@
             // 
             // btnApply
             // 
+            this.btnApply.BackColor = System.Drawing.Color.White;
             this.btnApply.Font = new System.Drawing.Font("Microsoft Sans Serif", 16.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnApply.Location = new System.Drawing.Point(87, 237);
             this.btnApply.Name = "btnApply";
             this.btnApply.Size = new System.Drawing.Size(182, 50);
             this.btnApply.TabIndex = 3;
             this.btnApply.Text = "Применить";
-            this.btnApply.UseVisualStyleBackColor = true;
+            this.btnApply.UseVisualStyleBackColor = false;
             // 
             // label1
             // 
@@ -141,6 +142,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.OldLace;
             this.ClientSize = new System.Drawing.Size(360, 321);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
