@@ -56,7 +56,7 @@
             this.dataGridViewProducts.AllowUserToAddRows = false;
             this.dataGridViewProducts.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dataGridViewProducts.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewProducts.Location = new System.Drawing.Point(323, 42);
+            this.dataGridViewProducts.Location = new System.Drawing.Point(330, 42);
             this.dataGridViewProducts.Name = "dataGridViewProducts";
             this.dataGridViewProducts.ReadOnly = true;
             this.dataGridViewProducts.RowHeadersWidth = 51;
@@ -69,21 +69,22 @@
             // 
             this.dataGridViewCart.AllowUserToAddRows = false;
             this.dataGridViewCart.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            this.dataGridViewCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridViewCart.Location = new System.Drawing.Point(716, 42);
+            this.dataGridViewCart.ColumnHeadersHeight = 29;
+            this.dataGridViewCart.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
+            this.dataGridViewCart.Location = new System.Drawing.Point(703, 42);
             this.dataGridViewCart.Name = "dataGridViewCart";
             this.dataGridViewCart.ReadOnly = true;
             this.dataGridViewCart.RowHeadersWidth = 51;
             this.dataGridViewCart.RowTemplate.Height = 24;
             this.dataGridViewCart.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridViewCart.Size = new System.Drawing.Size(365, 359);
+            this.dataGridViewCart.Size = new System.Drawing.Size(437, 359);
             this.dataGridViewCart.TabIndex = 1;
             // 
             // btnAddToCart
             // 
             this.btnAddToCart.BackColor = System.Drawing.Color.White;
             this.btnAddToCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAddToCart.Location = new System.Drawing.Point(323, 407);
+            this.btnAddToCart.Location = new System.Drawing.Point(330, 406);
             this.btnAddToCart.Name = "btnAddToCart";
             this.btnAddToCart.Size = new System.Drawing.Size(355, 64);
             this.btnAddToCart.TabIndex = 2;
@@ -94,9 +95,9 @@
             // 
             this.btnRemoveFromCart.BackColor = System.Drawing.Color.White;
             this.btnRemoveFromCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnRemoveFromCart.Location = new System.Drawing.Point(716, 407);
+            this.btnRemoveFromCart.Location = new System.Drawing.Point(703, 406);
             this.btnRemoveFromCart.Name = "btnRemoveFromCart";
-            this.btnRemoveFromCart.Size = new System.Drawing.Size(171, 64);
+            this.btnRemoveFromCart.Size = new System.Drawing.Size(200, 64);
             this.btnRemoveFromCart.TabIndex = 3;
             this.btnRemoveFromCart.Text = "Удалить из корзины";
             this.btnRemoveFromCart.UseVisualStyleBackColor = false;
@@ -105,9 +106,9 @@
             // 
             this.btnClearCart.BackColor = System.Drawing.Color.White;
             this.btnClearCart.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnClearCart.Location = new System.Drawing.Point(910, 407);
+            this.btnClearCart.Location = new System.Drawing.Point(940, 406);
             this.btnClearCart.Name = "btnClearCart";
-            this.btnClearCart.Size = new System.Drawing.Size(171, 64);
+            this.btnClearCart.Size = new System.Drawing.Size(200, 64);
             this.btnClearCart.TabIndex = 4;
             this.btnClearCart.Text = "Очистить корзину";
             this.btnClearCart.UseVisualStyleBackColor = false;
@@ -259,7 +260,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.OldLace;
-            this.ClientSize = new System.Drawing.Size(1132, 705);
+            this.ClientSize = new System.Drawing.Size(1181, 705);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.lblTotalBalance);
             this.Controls.Add(this.labelStatus);

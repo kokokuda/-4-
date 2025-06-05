@@ -17,7 +17,34 @@ namespace MyShop.Models
 
         public void AddProduct(Product product, decimal weight = 1)
         {
-            items.Add(new CartItem(product, weight));
+            var existingItem = items.FirstOrDefault(i => i.Product == product);
+
+            if (product is WeightedProduct)
+            {
+                decimal alreadyInCart = existingItem?.Weight ?? 0;
+                decimal totalRequested = alreadyInCart + weight;
+
+                if (totalRequested > product.Quantity)
+                    throw new InvalidOperationException("Нельзя добавить больше, чем есть на складе");
+
+                if (existingItem != null)
+                    existingItem.Weight += weight;
+                else
+                    items.Add(new CartItem(product, weight: weight));
+            }
+            else // штучный товар
+            {
+                int currentQuantity = existingItem?.Quantity ?? 0;
+                int requestedQuantity = currentQuantity + (int)weight;
+
+                if (requestedQuantity > product.Quantity)
+                    throw new InvalidOperationException("Нельзя добавить больше, чем есть на складе");
+
+                if (existingItem != null)
+                    existingItem.Quantity += (int)weight;
+                else
+                    items.Add(new CartItem(product, quantity: (int)weight));
+            }
         }
 
         public void RemoveProduct(CartItem item)

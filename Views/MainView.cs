@@ -67,8 +67,15 @@ namespace MyShop
 
             AddProductRequested += (product, weight) =>
             {
-                presenter.Buyer.Cart.AddProduct(product, weight);
-                presenter.UpdateTotalToPayFromCart();
+                try
+                {
+                    presenter.Buyer.Cart.AddProduct(product, weight);
+                    presenter.UpdateTotalToPayFromCart();
+                }
+                catch (InvalidOperationException ex)
+                {
+                    MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
             };
 
             RemoveProductRequested += item =>
@@ -138,17 +145,24 @@ namespace MyShop
                     DataPropertyName = "Weight",
                     HeaderText = "Вес"
                 });
-
                 dataGridViewCart.Columns.Add(new DataGridViewTextBoxColumn
                 {
-                    DataPropertyName = "TotalPrice",
-                    HeaderText = "Цена"
+                    DataPropertyName = "Quantity",
+                    HeaderText = "Количество"
                 });
 
-                dataGridViewCart.DataSource = null;
+                dataGridViewCart.Columns.Add(new DataGridViewTextBoxColumn
+                    {
+                        DataPropertyName = "TotalPrice",
+                        HeaderText = "Цена"
+                    });
+              
+
+            dataGridViewCart.DataSource = null;
                 dataGridViewCart.DataSource = items.Select(i => new
                 {
                     ProductName = i.Product.Name,
+                    Quantity = i.Quantity,
                     Weight = i.Weight,
                     TotalPrice = i.TotalPrice
                 }).ToList();
@@ -163,40 +177,46 @@ namespace MyShop
 
             private void BtnAddToCart_Click(object sender, EventArgs e)
             {
-                if (dataGridViewProducts.CurrentRow == null)
-                    return;
+            if (dataGridViewProducts.CurrentRow == null)
+                return;
 
-                var product = (Product)dataGridViewProducts.CurrentRow.DataBoundItem;
+            var product = (Product)dataGridViewProducts.CurrentRow.DataBoundItem;
 
-                if (product == null)
-                    return;
+            if (product == null)
+                return;
 
-                decimal weight = 1;
+            decimal weight = 1;
 
-                if (product is WeightedProduct)
+            if (product is WeightedProduct)
+            {
+                using (var weightForm = new WeightInputForm())
                 {
-                
-                    using (var weightForm = new WeightInputForm())
+                    if (weightForm.ShowDialog() == DialogResult.OK)
                     {
-                        if (weightForm.ShowDialog() == DialogResult.OK)
-                        {
-                            weight = weightForm.Weight;
-                        }
-                        else
-                        {
-                            return;
-                        }
+                        weight = weightForm.Weight;
                     }
-
-                    if (weight <= 0)
+                    else
                     {
-                        MessageBox.Show("Вес должен быть больше 0.");
                         return;
                     }
                 }
 
+                if (weight <= 0)
+                {
+                    MessageBox.Show("Вес должен быть больше 0.");
+                    return;
+                }
+            }
+
+            try
+            {
                 AddProductRequested?.Invoke(product, weight);
             }
+            catch (InvalidOperationException ex)
+            {
+                MessageBox.Show(ex.Message, "Ошибка", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+        }
 
             private void BtnRemoveFromCart_Click(object sender, EventArgs e)
             {
